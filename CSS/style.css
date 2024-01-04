@@ -1,0 +1,681 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?4w1jzc");
+  src: url("../fonts/icomoon.eot?4w1jzc#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?4w1jzc") format("truetype"),
+    url("../fonts/icomoon.woff?4w1jzc") format("woff"),
+    url("../fonts/icomoon.svg?4w1jzc#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-db_arrow_up:before {
+  content: "\e906";
+  color: #fff;
+}
+.icon-minus:before {
+  content: "\e909";
+}
+.icon-plus:before {
+  content: "\e90a";
+}
+.icon-close:before {
+  content: "\e90b";
+  color: #fff;
+}
+.icon-arrow_left:before {
+  content: "\e90c";
+}
+.icon-arrow_right:before {
+  content: "\e90d";
+}
+.icon-nav_menu:before {
+  content: "\e90e";
+}
+.icon-cart_icon:before {
+  content: "\e900";
+}
+.icon-heart_icon:before {
+  content: "\e901";
+}
+.icon-Recently_viewed_icon:before {
+  content: "\e902";
+}
+.icon-account_icon:before {
+  content: "\e903";
+}
+.icon-search_icon:before {
+  content: "\e904";
+}
+.icon-arrow_down:before {
+  content: "\e905";
+  color: #555;
+}
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+:root {
+}
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  box-shadow: 0 0.01rem 0.1rem rgba(0, 0, 0, 0.5);
+  scroll-behavior: smooth;
+  background-color: white;
+}
+.header_top span {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  cursor: pointer;
+}
+.header_top span i::before {
+  transition: all 0.3s linear;
+  opacity: 0.5;
+}
+.header_top span:hover i::before {
+  opacity: 1;
+}
+.header_top p {
+  margin-bottom: 0;
+  color: #fff;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 10px 0;
+  text-align: center;
+}
+.header_top {
+  background-color: #d0473e;
+}
+.header_mid a {
+  text-decoration: none;
+}
+.header_mid span,
+.header_mid a {
+  color: #111;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.header_mid i {
+  font-size: 5px;
+  margin-left: 5px;
+  position: relative;
+  top: -2px;
+}
+.header_mid {
+  border-bottom: 1px solid #ebebeb;
+  padding: 10px 0px;
+}
+.header_mid_text_left span:nth-child(1) {
+  margin-right: 25px;
+}
+.header_mid_text_right {
+  gap: 25px;
+}
+.header_mid_text_mid a span {
+  font-weight: 600;
+  text-decoration: underline;
+}
+.header_bot img {
+  height: 100%;
+  width: 95px;
+}
+.header_bot_list {
+  height: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+}
+.header_bot_link {
+  text-decoration: none;
+  color: #111;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  transition: all 0.3s linear;
+  line-height: normal;
+}
+.header_bot_link i {
+  margin-left: 5px;
+  font-size: 5px;
+  position: relative;
+  top: -2px;
+}
+.header_bot_item,
+.header_bot_right,
+.header_bot_image {
+  cursor: pointer;
+  padding: 25px 0px;
+}
+.header_bot_image {
+  display: block;
+}
+.header_bot_item:hover .header_bot_link,
+.header_bot_item:hover .header_bot_link ~ i::before {
+  color: #d0473e;
+}
+.header_bot_right {
+  height: 100%;
+  margin-right: 10px;
+  gap: 20px;
+}
+.header_bot_icon i {
+  font-size: 16px;
+  font-weight: 500;
+}
+.header_bot_icon i::before {
+  transition: all 0.3s linear;
+  color: black;
+}
+.header_bot_icon {
+  text-decoration: none;
+}
+.header_bot_icon:hover i::before {
+  color: #d0473e;
+}
+.header_bot_icon span {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #d0473e;
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: white;
+  top: -8px;
+  right: -10px;
+}
+
+.shop_item {
+  background-color: white;
+  left: 10%;
+  right: 10%;
+  top: 95%;
+  transition: all 0.2s linear;
+  visibility: hidden;
+  opacity: 0;
+  padding: 35px 40px 25px 40px;
+  border-radius: 3px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+}
+
+.shop:hover .shop_item {
+  visibility: visible;
+  opacity: 1;
+}
+.shop_item_img:nth-child(2) img {
+  border-radius: 3px;
+}
+.shop_item_img.shop_img button {
+  width: 70%;
+  padding: 16px 50px;
+}
+.shop_item_img:hover img {
+  transform: scale(1.03);
+}
+.header_bot_mid {
+  height: 100%;
+}
+.page_item {
+  padding: 20px 0px;
+  width: 450%;
+  background-color: white;
+  top: 105%;
+  border-radius: 3px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s linear;
+}
+.page:hover .page_item {
+  top: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+.page_list_item_link {
+  display: block;
+  padding: 10px 0px 10px 30px;
+  text-decoration: none;
+  color: #555555;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: all 0.2s linear;
+}
+.shop_item .page_list_item_link {
+  padding-left: 0px;
+}
+.page_list_item_link:hover {
+  color: #555555;
+  transform: translateX(10px);
+}
+.blog:hover .page_item {
+  top: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+.product_item {
+  padding: 35px 40px 25px 40px;
+  background-color: white;
+  left: 0;
+  right: 0;
+  top: 100%;
+  transition: all 0.2s linear;
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 3px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+}
+.product_item span,
+.shop_item span {
+  display: block;
+  color: #111111;
+  margin-bottom: 1rem;
+  font-size: 16px;
+  font-family: "Jost", sans-serif;
+}
+.product_item .page_list .page_list_item_link {
+  padding: 5px 0px;
+  line-height: 2;
+}
+.product:hover .product_item {
+  top: 95%;
+  visibility: visible;
+  opacity: 1;
+}
+.nav-bar_mobile {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  top: 0;
+  z-index: 3;
+  overflow-y: auto;
+  background-color: white;
+  transition: all 0.3s linear;
+  transform: translateX(-100%);
+}
+.go_in {
+  transform: none;
+}
+.nav_bar_head_text span {
+  opacity: 0.6;
+  color: #fff;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.nav_bar_head_text {
+  padding: 10px 0px;
+}
+.nav_bar_head_text span:nth-child(2) {
+  margin-left: 30px;
+}
+.mobile-nav::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: all linear 0.2s forwards;
+}
+
+.close_navbar_btn {
+  padding-right: 15px;
+}
+.nav_bar_head {
+  z-index: 2;
+  position: sticky;
+  top: 0;
+  height: 50px;
+  padding: 0px 30px;
+  padding-right: 15px;
+  background: #d0473e;
+}
+.nav_bar_head_text .active {
+  opacity: 1;
+}
+.menu_item_link {
+  border-bottom: 1px solid #e5e8ec;
+  display: block;
+  padding: 15px 0px;
+  text-decoration: none;
+  color: #111;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.menu_item_link .icon-arrow_right {
+  font-size: 10px;
+}
+.menu_item {
+  padding: 0px 30px;
+}
+.menu_item_link .icon {
+  margin-right: 10px;
+}
+.country {
+  display: block;
+  padding: 2px;
+  border: 1px solid #ebebeb;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+}
+.country_item {
+  color: #555;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.country_list {
+  margin-top: 15px;
+}
+.home,
+.shopp {
+  z-index: 4;
+}
+.home .nav_bar_head,
+.shopp .nav_bar_head,
+.shop_layout .nav_bar_head,
+.shop_page .nav_bar_head,
+.blogg .nav_bar_head,
+.pagee .nav_bar_head,
+.productt .nav_bar_head,
+.product_layout .nav_bar_head,
+.product_feature .nav_bar_head,
+.product_detail .nav_bar_head,
+.thumb_position .nav_bar_head,
+.boot_sale .nav_bar_head,
+.product_type .nav_bar_head {
+  background-color: #f5f5f5;
+}
+.home .nav_bar_head_text span,
+.shopp .nav_bar_head_text span,
+.shop_layout .nav_bar_head_text span,
+.shop_page .nav_bar_head_text span,
+.pagee .nav_bar_head_text span,
+.blogg .nav_bar_head_text span,
+.productt .nav_bar_head_text span,
+.product_layout .nav_bar_head_text span,
+.product_feature .nav_bar_head_text span,
+.product_detail .nav_bar_head_text span,
+.thumb_position .nav_bar_head_text span,
+.boot_sale .nav_bar_head_text span,
+.product_type .nav_bar_head_text span {
+  margin-left: 15px;
+  color: #555;
+}
+.home .nav_bar_head_text i,
+.shopp .nav_bar_head_text i,
+.shop_layout .nav_bar_head_text i,
+.shop_page .nav_bar_head_text i,
+.pagee .nav_bar_head_text i,
+.blogg .nav_bar_head_text i,
+.productt .nav_bar_head_text i,
+.product_layout .nav_bar_head_text i,
+.product_feature .nav_bar_head_text i,
+.product_detail .nav_bar_head_text i,
+.thumb_position .nav_bar_head_text i,
+.boot_sale .nav_bar_head_text i,
+.product_type .nav_bar_head_text i {
+  position: relative;
+  top: -1px;
+}
+.home .close_navbar_btn i::before,
+.shopp .close_navbar_btn i::before,
+.shop_layout .close_navbar_btn i::before,
+.shop_page .close_navbar_btn i::before,
+.pagee .close_navbar_btn i::before,
+.blogg .close_navbar_btn i::before,
+.productt .close_navbar_btn i::before,
+.product_layout .close_navbar_btn i::before,
+.product_feature .close_navbar_btn i::before,
+.product_detail .close_navbar_btn i::before,
+.thumb_position .close_navbar_btn i::before,
+.boot_sale .close_navbar_btn i::before,
+.product_type .close_navbar_btn i::before {
+  color: #555;
+}
+.shop_layout,
+.shop_page {
+  z-index: 5;
+}
+.layer.mobile-nav::before {
+  opacity: 1;
+  visibility: visible;
+}
+.shop_img {
+  z-index: 1;
+  width: 100%;
+  aspect-ratio: 0.81300813008;
+}
+.shop_img img {
+  transition: all 0.3s linear;
+  width: 100%;
+  height: 100%;
+}
+#shop_page {
+  border-bottom: none;
+}
+.menu_item:nth-child(4) .shop_img {
+  margin-top: 20px;
+}
+.shop_img button {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  display: flex;
+  padding: 16px 95px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #111;
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 30px;
+}
+.cate {
+  display: none;
+  top: 50px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  z-index: 1;
+}
+.mobile-item-close {
+  animation: fadein 0.5s linear;
+  display: block;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.feature_collection {
+  margin-bottom: 100px;
+}
+.feature_collection_text {
+  text-align: center;
+}
+.feature_collection_text h2 {
+  color: #111;
+  font-family: "Jost", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+.feature_collection_text p {
+  color: #555;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0px;
+}
+.feature_collection_main {
+  margin-top: 40px;
+}
+.feature_collection_main img {
+  transition: all 0.3s linear;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.feature_collection_img_1 {
+  height: 100%;
+  border-radius: 10px;
+  background: #ecedef;
+  aspect-ratio: 0.61643835616;
+}
+.feature_collection_img_2 {
+  height: 100%;
+  border-radius: 10px;
+  flex: 1;
+  aspect-ratio: 1.28571428571;
+}
+.feature_collection_img_3 {
+  height: 100%;
+  border-radius: 10px;
+  flex: 1;
+  aspect-ratio: 1.28571428571;
+}
+.feature_collection_img_4 {
+  height: 100%;
+  border-radius: 10px;
+  aspect-ratio: 0.61643835616;
+}
+.feature_collection_img:hover img {
+  transform: scale(1.03);
+}
+.main-btn {
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #111;
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 30px;
+  padding: 14px 20px;
+  width: 200px;
+}
+.main-btn:hover {
+  color: black;
+}
+.trending_list_product {
+  transition: all 0.3s linear;
+  width: 100%;
+  overflow-x: auto;
+  margin-bottom: 100px;
+}
+.trending_list_product::-webkit-scrollbar {
+  display: none;
+}
+.trending_product_image {
+  aspect-ratio: 0.75;
+}
+.trending_product_image img {
+  width: 100%;
+  height: 100%;
+}
+.trending_text {
+  margin-bottom: 40px;
+}
+.trending_product_text {
+  margin-top: 16px;
+  gap: 8px;
+}
+.trending_product_text h3 {
+  color: #111;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0;
+}
+.trending_product_text .price {
+  color: #111;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 0;
+}
