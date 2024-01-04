@@ -33,6 +33,9 @@
   .mobile-nav {
     padding: 15px 0px;
   }
+  .section_banner{
+    padding: 0px 15px;
+  }
 }
 @media (min-width: 1025px) {
   .nav-bar_mobile {
@@ -43,6 +46,9 @@
   }
 }
 @media (max-width: 575px) {
+  .section_banner .row .col-lg-4{
+    max-width: 83%;
+  }
   .nav-bar_mobile {
     width: 100%;
   }

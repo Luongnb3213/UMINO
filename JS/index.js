@@ -116,7 +116,9 @@ window.addEventListener("scroll", () => {});
 const next_btn = document.querySelector(".next-btn");
 const back_btn = document.querySelector(".back-btn");
 const trending_list_product = document.querySelector(".trending_list_product");
-const product = document.querySelector(".trending_list_product .row .col:first-child");
+const product = document.querySelector(
+  ".trending_list_product .row .col:first-child"
+);
 next_btn.onclick = (e) => {
   trending_list_product.style.scrollBehavior = "smooth";
   trending_list_product.scrollLeft += product.clientWidth;
@@ -140,3 +142,4 @@ back_btn.onclick = (e) => {
 /* ======================================== 
    END Trending slider
    ====================================== */
+
