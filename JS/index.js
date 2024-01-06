@@ -11,7 +11,6 @@ const category = document.querySelector("#cate");
 const menu_mobile = document.querySelector(".menu");
 const category_mobile = document.querySelector(".cate");
 
-console.log(menu);
 menu.onclick = function () {
   if (!menu.classList.contains("active")) {
     category.classList.remove("active");
@@ -161,6 +160,10 @@ Array.from(back_btns).forEach((back_btn) => {
 
 const next_btns_mobile = document.querySelectorAll(".mobile_button .next-btn");
 const back_btns_mobile = document.querySelectorAll(".mobile_button .back-btn");
+
+console.log(back_btns_mobile)
+
+
 
 Array.from(next_btns_mobile).forEach((next_btn) => {
   next_btn.onclick = (e) => {
