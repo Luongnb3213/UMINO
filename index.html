@@ -4,17 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="UMINO">
+    <meta name="description" content="UMINO" />
+    <meta name="theme-color" content="#d0473e">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/responsive.css">
-    <meta name="theme-color" content="#d0473e" />
+
     <title>UMINO</title>
 </head>
 
 <body>
+    <div class="back-top">
+        <span class="bls_back-top"></span>
+        <i class="icon-db_arrow_up back-top_icon"></i>
+    </div>
     <header>
         <div class="header_top position-relative">
             <p>Final Hours! 50% Off! No code needed:
@@ -587,13 +592,13 @@
                 </div>
                 <div class="col-lg-2">
                     <div class="header_bot_right d-lg-flex justify-content-lg-end align-items-lg-center">
-                        <a href="#" class="header_bot_icon">
+                        <a href="#" class="header_bot_icon" aria-label="icon">
                             <i class="icon-search_icon"></i>
                         </a>
-                        <a href="#" class="header_bot_icon">
+                        <a href="#" class="header_bot_icon" aria-label="icon">
                             <i class="icon-account_icon"></i>
                         </a>
-                        <a href="#" class="header_bot_icon">
+                        <a href="#" class="header_bot_icon" aria-label="icon">
                             <i class="icon-Recently_viewed_icon"></i>
                         </a>
                         <a href="#" class="header_bot_icon position-relative">
@@ -1658,7 +1663,7 @@
                         <div class="col">
                             <div
                                 class="feature_collection_img_1  feature_collection_img overflow-hidden position-relative">
-                                <a href="#">
+                                <a href="#" aria-label="image">
                                     <img src="./images/feature_img/feature_img_1.png" alt="">
                                 </a>
                                 <a href="#" class="main-btn">Clothing</a>
@@ -1668,14 +1673,14 @@
                             <div class="d-flex flex-column gap-5">
                                 <div
                                     class="feature_collection_img_2 feature_collection_img overflow-hidden position-relative">
-                                    <a href="#">
+                                    <a href="#" aria-label="image">
                                         <img src="./images/feature_img/feature_img_2.png" alt="">
                                     </a>
                                     <a href="#" class="main-btn">Sunglasses</a>
                                 </div>
                                 <div
                                     class="feature_collection_img_3 feature_collection_img overflow-hidden position-relative">
-                                    <a href="#">
+                                    <a href="#" aria-label="image">
                                         <img src="./images/feature_img/feature_img_3.png" alt="">
                                     </a>
                                     <a href="#" class="main-btn">Bags</a>
@@ -1685,7 +1690,7 @@
                         <div class="col">
                             <div
                                 class="feature_collection_img_4 feature_collection_img overflow-hidden position-relative">
-                                <a href="#">
+                                <a href="#" aria-label="image">
                                     <img src="./images/feature_img/feature_img_4.png" alt="">
                                 </a>
                                 <a href="#" class="main-btn">Sneaker</a>
@@ -1699,14 +1704,14 @@
                             <div class="d-flex flex-column gap-4">
                                 <div
                                     class="feature_collection_img_1  feature_collection_img overflow-hidden position-relative">
-                                    <a href="#">
+                                    <a href="#" aria-label="image">
                                         <img src="./images/feature_img/feature_img_1.png" alt="">
                                     </a>
                                     <a href="#" class="main-btn">Clothing</a>
                                 </div>
                                 <div
                                     class="feature_collection_img_2 feature_collection_img overflow-hidden position-relative">
-                                    <a href="#">
+                                    <a href="#" aria-label="image">
                                         <img src="./images/feature_img/feature_img_2.png" alt="">
                                     </a>
                                     <a href="#" class="main-btn">Sunglasses</a>
@@ -1718,14 +1723,14 @@
                             <div class="d-flex flex-column gap-4">
                                 <div
                                     class="feature_collection_img_3 feature_collection_img overflow-hidden position-relative">
-                                    <a href="#">
+                                    <a href="#" aria-label="image">
                                         <img src="./images/feature_img/feature_img_3.png" alt="">
                                     </a>
                                     <a href="#" class="main-btn">Bags</a>
                                 </div>
                                 <div
                                     class="feature_collection_img_4 feature_collection_img overflow-hidden position-relative">
-                                    <a href="#">
+                                    <a href="#" aria-label="image">
                                         <img src="./images/feature_img/feature_img_4.png" alt="">
                                     </a>
                                     <a href="#" class="main-btn">Sneaker</a>
@@ -1742,6 +1747,14 @@
                     <h2>Trending this Week</h2>
                     <p>Our products are designed for everyone, detailed, meticulous and unique.</p>
                 </div>
+                <div class="mobile_button d-flex d-lg-none justify-content-center align-items-center gap-3">
+                    <div class="back-btn">
+                        <i class="icon-arrow_left"></i>
+                    </div>
+                    <div class="next-btn">
+                        <i class="icon-arrow_right"></i>
+                    </div>
+                </div>
                 <div class="trending_wrap position-relative">
                     <div class="back-btn position-absolute">
                         <i class="icon-arrow_left"></i>
@@ -1749,20 +1762,20 @@
                     <div class="next-btn position-absolute">
                         <i class="icon-arrow_right"></i>
                     </div>
-                    <div class="trending_list_product ">
-                        <div class="row row-cols-xl-4 row-cols-md-3 row-cols-2 flex-nowrap gx-5">
+                    <div class="trending_list_product">
+                        <div class="row row-cols-xl-4 row-cols-md-3 row-cols-2 flex-nowrap gx-4 gx-md-5">
                             <div class="col">
                                 <div class="trending_product_image position-relative">
                                     <img src="./images/trending/trending_1.png" alt="">
                                     <img class="position-absolute" src="./images/trending/trending_1_2.png" alt="">
                                     <div class="trending_icon_list d-flex flex-column position-absolute">
-                                        <a href="#" class="trending_icon">
+                                        <a href="#" class="trending_icon" aria-label="icon">
                                             <i class="icon-heart_icon"></i>
                                         </a>
-                                        <a href="#" class="trending_icon">
+                                        <a href="#" class="trending_icon" aria-label="icon">
                                             <i class="icon-cart_icon"></i>
                                         </a>
-                                        <a href="#" class="trending_icon">
+                                        <a href="#" class="trending_icon" aria-label="icon">
                                             <i class="icon-search_icon"></i>
                                         </a>
                                     </div>
@@ -1780,8 +1793,8 @@
                                     </div>
                                     <p class="price">$150.00</p>
                                     <div class="pick_color d-flex gap-2 justify-content-start align-items-center">
-                                        <div class="green active"></div>
-                                        <div class="green purple"></div>
+                                        <div class="green active" data-img="./images/trending/trending_1.png"></div>
+                                        <div class="green purple" data-img="./images/trending/trending_1_2.png"></div>
                                     </div>
                                 </div>
                             </div>
@@ -1790,13 +1803,13 @@
                                     <img src="./images/trending/trending_2.png" alt="">
                                     <img class="position-absolute" src="./images/trending/trending_2_2.png" alt="">
                                     <div class="trending_icon_list d-flex flex-column position-absolute">
-                                        <a href="#" class="trending_icon">
+                                        <a href="#" class="trending_icon" aria-label="icon">
                                             <i class="icon-heart_icon"></i>
                                         </a>
-                                        <a href="#" class="trending_icon">
+                                        <a href="#" class="trending_icon" aria-label="icon">
                                             <i class="icon-cart_icon"></i>
                                         </a>
-                                        <a href="#" class="trending_icon">
+                                        <a href="#" class="trending_icon" aria-label="icon">
                                             <i class="icon-search_icon"></i>
                                         </a>
                                     </div>
@@ -1814,8 +1827,8 @@
                                     </div>
                                     <p class="price">$150.00</p>
                                     <div class="pick_color d-flex gap-2 justify-content-start align-items-center">
-                                        <div class="green"></div>
-                                        <div class="green blue"></div>
+                                        <div class="green active" data-img="./images/trending/trending_2.png"></div>
+                                        <div class="green blue" data-img="./images/trending/trending_2_2.png"></div>
                                     </div>
                                 </div>
                             </div>
@@ -1824,13 +1837,13 @@
                                     <img src="./images/trending/trending_3.png" alt="">
                                     <img class="position-absolute" src="./images/trending/trending_3_2.png" alt="">
                                     <div class="trending_icon_list d-flex flex-column position-absolute">
-                                        <a href="#" class="trending_icon">
+                                        <a href="#" class="trending_icon" aria-label="icon">
                                             <i class="icon-heart_icon"></i>
                                         </a>
-                                        <a href="#" class="trending_icon">
+                                        <a href="#" class="trending_icon" aria-label="icon">
                                             <i class="icon-cart_icon"></i>
                                         </a>
-                                        <a href="#" class="trending_icon">
+                                        <a href="#" class="trending_icon" aria-label="icon">
                                             <i class="icon-search_icon"></i>
                                         </a>
                                     </div>
@@ -1848,8 +1861,8 @@
                                     </div>
                                     <p class="price">$150.00</p>
                                     <div class="pick_color d-flex gap-2 justify-content-start align-items-center">
-                                        <div class="green"></div>
-                                        <div class="green black"></div>
+                                        <div class="green active" data-img="./images/trending/trending_3.png"></div>
+                                        <div class="green black" data-img="./images/trending/trending_3_2.png"></div>
                                     </div>
                                 </div>
                             </div>
@@ -1858,13 +1871,13 @@
                                     <img src="./images/trending/trending_4.png" alt="">
                                     <img class="position-absolute" src="./images/trending/trending_4_2.png" alt="">
                                     <div class="trending_icon_list d-flex flex-column position-absolute">
-                                        <a href="#" class="trending_icon">
+                                        <a href="#" class="trending_icon" aria-label="icon">
                                             <i class="icon-heart_icon"></i>
                                         </a>
-                                        <a href="#" class="trending_icon">
+                                        <a href="#" class="trending_icon" aria-label="icon">
                                             <i class="icon-cart_icon"></i>
                                         </a>
-                                        <a href="#" class="trending_icon">
+                                        <a href="#" class="trending_icon" aria-label="icon">
                                             <i class="icon-search_icon"></i>
                                         </a>
                                     </div>
@@ -1882,8 +1895,9 @@
                                     </div>
                                     <p class="price">$150.00</p>
                                     <div class="pick_color d-flex gap-2 justify-content-start align-items-center">
-                                        <div class="green black"></div>
-                                        <div class="green purple"></div>
+                                        <div class="green black active" data-img="./images/trending/trending_4.png">
+                                        </div>
+                                        <div class="green purple" data-img="./images/trending/trending_4_2.png"></div>
                                     </div>
                                 </div>
                             </div>
@@ -1892,13 +1906,13 @@
                                     <img src="./images/trending/trending_4.png" alt="">
                                     <img src="./images/trending/trending_4_2.png" class="position-absolute" alt="">
                                     <div class="trending_icon_list d-flex flex-column position-absolute">
-                                        <a href="#" class="trending_icon">
+                                        <a href="#" class="trending_icon" aria-label="icon">
                                             <i class="icon-heart_icon"></i>
                                         </a>
-                                        <a href="#" class="trending_icon">
+                                        <a href="#" class="trending_icon" aria-label="icon">
                                             <i class="icon-cart_icon"></i>
                                         </a>
-                                        <a href="#" class="trending_icon">
+                                        <a href="#" class="trending_icon" aria-label="icon">
                                             <i class="icon-search_icon"></i>
                                         </a>
                                     </div>
@@ -1916,8 +1930,9 @@
                                     </div>
                                     <p class="price">$150.00</p>
                                     <div class="pick_color d-flex gap-2 justify-content-start align-items-center">
-                                        <div class="green"></div>
-                                        <div class="green purple"></div>
+                                        <div class="green black active" data-img="./images/trending/trending_4.png">
+                                        </div>
+                                        <div class="green purple" data-img="./images/trending/trending_4_2.png"></div>
                                     </div>
                                 </div>
                             </div>
@@ -1968,6 +1983,14 @@
                     <h2>New Arrivals</h2>
                     <p>Here’s some of our new arrivals products people are in love with.</p>
                 </div>
+                <div class="mobile_button d-flex d-lg-none justify-content-center align-items-center gap-3">
+                    <div class="back-btn">
+                        <i class="icon-arrow_left"></i>
+                    </div>
+                    <div class="next-btn">
+                        <i class="icon-arrow_right"></i>
+                    </div>
+                </div>
                 <div class="trending_wrap position-relative">
                     <div class="back-btn position-absolute">
                         <i class="icon-arrow_left"></i>
@@ -1976,19 +1999,19 @@
                         <i class="icon-arrow_right"></i>
                     </div>
                     <div class="trending_list_product ">
-                        <div class="row row-cols-xl-4 row-cols-md-3 row-cols-2 flex-nowrap gx-5">
+                        <div class="row row-cols-xl-4 row-cols-md-3 row-cols-2 flex-nowrap gx-4 gx-md-5">
                             <div class="col">
                                 <div class="trending_product_image position-relative">
                                     <img src="./images/new_arrivals/NA_1_1.png" alt="">
                                     <img class="position-absolute" src="./images/new_arrivals/NA_1_2.png" alt="">
                                     <div class="trending_icon_list d-flex flex-column position-absolute">
-                                        <a href="#" class="trending_icon">
+                                        <a href="#" class="trending_icon" aria-label="icon">
                                             <i class="icon-heart_icon"></i>
                                         </a>
-                                        <a href="#" class="trending_icon">
+                                        <a href="#" class="trending_icon" aria-label="icon">
                                             <i class="icon-cart_icon"></i>
                                         </a>
-                                        <a href="#" class="trending_icon">
+                                        <a href="#" class="trending_icon" aria-label="icon">
                                             <i class="icon-search_icon"></i>
                                         </a>
                                     </div>
@@ -2006,9 +2029,10 @@
                                     </div>
                                     <p class="price">$150.00</p>
                                     <div class="pick_color d-flex gap-2 justify-content-start align-items-center">
-                                        <div class="green blue"></div>
-                                        <div class="green beige"></div>
-                                        <div class="green pink"></div>
+                                        <div class="green blue active" data-img="./images/new_arrivals/NA_1_1.png">
+                                        </div>
+                                        <div class="green beige" data-img="./images/new_arrivals/NA_1_1.png"></div>
+                                        <div class="green pink" data-img="./images/new_arrivals/NA_1_2.png"></div>
                                     </div>
                                 </div>
                             </div>
@@ -2017,13 +2041,13 @@
                                     <img src="./images/new_arrivals/NA_2_1.png" alt="">
                                     <img class="position-absolute" src="./images/new_arrivals/NA_2_2.png" alt="">
                                     <div class="trending_icon_list d-flex flex-column position-absolute">
-                                        <a href="#" class="trending_icon">
+                                        <a href="#" class="trending_icon" aria-label="icon">
                                             <i class="icon-heart_icon"></i>
                                         </a>
-                                        <a href="#" class="trending_icon">
+                                        <a href="#" class="trending_icon" aria-label="icon">
                                             <i class="icon-cart_icon"></i>
                                         </a>
-                                        <a href="#" class="trending_icon">
+                                        <a href="#" class="trending_icon" aria-label="icon">
                                             <i class="icon-search_icon"></i>
                                         </a>
                                     </div>
@@ -2041,8 +2065,9 @@
                                     </div>
                                     <p class="price">$150.00</p>
                                     <div class="pick_color d-flex gap-2 justify-content-start align-items-center">
-                                        <div class="green white"></div>
-                                        <div class="green yellow"></div>
+                                        <div class="green white active" data-img="./images/new_arrivals/NA_2_1.png">
+                                        </div>
+                                        <div class="green yellow" data-img="./images/new_arrivals/NA_2_2.png"></div>
 
                                     </div>
                                 </div>
@@ -2052,13 +2077,13 @@
                                     <img src="./images/new_arrivals/NA_3_1.png" alt="">
                                     <img class="position-absolute" src="./images/new_arrivals/NA_3_2.png" alt="">
                                     <div class="trending_icon_list d-flex flex-column position-absolute">
-                                        <a href="#" class="trending_icon">
+                                        <a href="#" class="trending_icon" aria-label="icon">
                                             <i class="icon-heart_icon"></i>
                                         </a>
-                                        <a href="#" class="trending_icon">
+                                        <a href="#" class="trending_icon" aria-label="icon">
                                             <i class="icon-cart_icon"></i>
                                         </a>
-                                        <a href="#" class="trending_icon">
+                                        <a href="#" class="trending_icon" aria-label="icon">
                                             <i class="icon-search_icon"></i>
                                         </a>
                                     </div>
@@ -2076,9 +2101,10 @@
                                     </div>
                                     <p class="price">$150.00</p>
                                     <div class="pick_color d-flex gap-2 justify-content-start align-items-center">
-                                        <div class="green blue"></div>
-                                        <div class="green black"></div>
-                                        <div class="green white"></div>
+                                        <div class="green blue active" data-img="./images/new_arrivals/NA_3_1.png">
+                                        </div>
+                                        <div class="green black" data-img="./images/new_arrivals/NA_3_2.png"></div>
+                                        <div class="green white" data-img="./images/new_arrivals/NA_3_2.png"></div>
                                     </div>
                                 </div>
                             </div>
@@ -2087,13 +2113,13 @@
                                     <img src="./images/new_arrivals/NA_4_1.png" alt="">
                                     <img class="position-absolute" src="./images/new_arrivals/NA_4_2.png" alt="">
                                     <div class="trending_icon_list d-flex flex-column position-absolute">
-                                        <a href="#" class="trending_icon">
+                                        <a href="#" class="trending_icon" aria-label="icon">
                                             <i class="icon-heart_icon"></i>
                                         </a>
-                                        <a href="#" class="trending_icon">
+                                        <a href="#" class="trending_icon" aria-label="icon">
                                             <i class="icon-cart_icon"></i>
                                         </a>
-                                        <a href="#" class="trending_icon">
+                                        <a href="#" class="trending_icon" aria-label="icon">
                                             <i class="icon-search_icon"></i>
                                         </a>
                                     </div>
@@ -2111,8 +2137,9 @@
                                     </div>
                                     <p class="price">$150.00</p>
                                     <div class="pick_color d-flex gap-2 justify-content-start align-items-center">
-                                        <div class="green green"></div>
-                                        <div class="green white"></div>
+                                        <div class="green green active" data-img="./images/new_arrivals/NA_4_1.png">
+                                        </div>
+                                        <div class="green white" data-img="./images/new_arrivals/NA_4_2.png"></div>
                                     </div>
                                 </div>
                             </div>
@@ -2121,13 +2148,13 @@
                                     <img src="./images/trending/trending_4.png" alt="">
                                     <img src="./images/trending/trending_4_2.png" class="position-absolute" alt="">
                                     <div class="trending_icon_list d-flex flex-column position-absolute">
-                                        <a href="#" class="trending_icon">
+                                        <a href="#" class="trending_icon" aria-label="icon">
                                             <i class="icon-heart_icon"></i>
                                         </a>
-                                        <a href="#" class="trending_icon">
+                                        <a href="#" class="trending_icon" aria-label="icon">
                                             <i class="icon-cart_icon"></i>
                                         </a>
-                                        <a href="#" class="trending_icon">
+                                        <a href="#" class="trending_icon" aria-label="icon">
                                             <i class="icon-search_icon"></i>
                                         </a>
                                     </div>
@@ -2145,8 +2172,9 @@
                                     </div>
                                     <p class="price">$150.00</p>
                                     <div class="pick_color d-flex gap-2 justify-content-start align-items-center">
-                                        <div class="green"></div>
-                                        <div class="purple"></div>
+                                        <div class="green green active" data-img="./images/new_arrivals/NA_4_1.png">
+                                        </div>
+                                        <div class="green white" data-img="./images/new_arrivals/NA_4_2.png"></div>
                                     </div>
                                 </div>
                             </div>
@@ -2259,6 +2287,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="shop_gram">
                 <div class="feature_collection_text trending_text">
                     <h2>Shop by Gram</h2>
@@ -2267,37 +2296,37 @@
                 <div class="shop_gram_list">
                     <div class="row row-cols-xl-6 row-cols-md-3 row-cols-2 gx-2">
                         <div class="col">
-                            <div class="shop_gram_img position-relative">
+                            <div class="shop_gram_img position-relative overflow-hidden">
                                 <img src="./images/shop_gram/SG_1.png" alt="">
                                 <span class="position-absolute shop_gram_cart"><i class="icon-cart_v2"></i></span>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="shop_gram_img position-relative">
+                            <div class="shop_gram_img position-relative overflow-hidden">
                                 <img src="./images/shop_gram/SG_2.jpg" alt="">
                                 <span class="position-absolute shop_gram_cart"><i class="icon-cart_v2"></i></span>
                             </div>
                         </div>
                         <div class="d-none d-md-block col">
-                            <div class="shop_gram_img position-relative">
+                            <div class="shop_gram_img position-relative overflow-hidden">
                                 <img src="./images/shop_gram/SG_3.png" alt="">
                                 <span class="position-absolute shop_gram_cart"><i class="icon-cart_v2"></i></span>
                             </div>
                         </div>
                         <div class="d-none d-xl-block col">
-                            <div class="shop_gram_img position-relative">
+                            <div class="shop_gram_img position-relative overflow-hidden">
                                 <img src="./images/shop_gram/SG_4.png" alt="">
                                 <span class="position-absolute shop_gram_cart"><i class="icon-cart_v2"></i></span>
                             </div>
                         </div>
-                        <div class="d-none d-xl-block col">
-                            <div class="shop_gram_img position-relative">
+                        <div class="d-none d-xl-block col ">
+                            <div class="shop_gram_img position-relative overflow-hidden">
                                 <img src="./images/shop_gram/SG_5.png" alt="">
                                 <span class="position-absolute shop_gram_cart"><i class="icon-cart_v2"></i></span>
                             </div>
                         </div>
                         <div class="d-none d-xl-block col">
-                            <div class="shop_gram_img position-relative">
+                            <div class="shop_gram_img position-relative overflow-hidden">
                                 <img src="./images/shop_gram/SG_6.png" alt="">
                                 <span class="position-absolute shop_gram_cart"><i class="icon-cart_v2"></i></span>
                             </div>
@@ -2312,8 +2341,8 @@
         <div class="container-fluid">
             <div class="footer_main">
                 <div class="row gx-5">
-                    <div class="col-xl-4 col-12 col-md-6 mb-md-5">
-                        <div class="footer_content">
+                    <div class="col-xl-4 col-12 col-md-6 mb-md-5 ">
+                        <div class="footer_content py-md-0">
                             <img src="./images/logo_umino.png" width="90" alt="">
                             <p>268 St, South New York/NY 98944, United States</p>
                             <p>
@@ -2326,10 +2355,15 @@
 
                         </div>
                     </div>
-                    <div class="col-xl-2 col-12 col-md-6 mb-md-5">
-                        <div class="footer_content">
-                            <h3>Company</h3>
-                            <ul class="list-unstyled footer_list">
+                    <div class="col-xl-2 col-12 col-md-6 mb-md-5 ">
+                        <div class="footer_content py-md-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h3>Company</h3>
+                                <span class="d-md-none open-children-toogle position-relative">
+                                </span>
+                            </div>
+
+                            <ul class="list-unstyled footer_list max-height-0">
                                 <li class="footer_list_item">
                                     <a href="#" class="footer_list_link">
                                         About us
@@ -2359,9 +2393,13 @@
                         </div>
                     </div>
                     <div class="col-xl-2 col-12 col-md-6">
-                        <div class="footer_content">
-                            <h3>Customer Service</h3>
-                            <ul class="list-unstyled footer_list">
+                        <div class="footer_content py-md-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h3>Customer Service</h3>
+                                <span class="d-md-none open-children-toogle position-relative">
+                                </span>
+                            </div>
+                            <ul class="list-unstyled footer_list max-height-0">
                                 <li class="footer_list_item">
                                     <a href="#" class="footer_list_link">
                                         Privacy Policy
@@ -2400,21 +2438,83 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-12 col-md-6">
-                        <div class="footer_content">
-                            <h3>Sign Up to Newsletter</h3>
-                            <p>Enter your email address to get $10 off your first order and free
-                                shipping. Updates information on Sales and Offers.</p>
-                            <div class="footer_input d-flex gap-2 justify-content-between">
-                                <input type="text" placeholder="Enter your email...">
-                                <button>SUBSCRIBE</button>
+                    <div class="col-xl-4 col-12 col-md-6 ">
+                        <div class="footer_content py-md-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h3>Sign Up to Newsletter</h3>
+                                <span class="d-md-none open-children-toogle position-relative">
+                                </span>
                             </div>
+                            <div class="footer_list max-height-0">
+                                <p>Enter your email address to get $10 off your first order and free
+                                    shipping. Updates information on Sales and Offers.</p>
+                                <div class="footer_input d-flex gap-2 justify-content-between">
+                                    <input type="text" placeholder="Enter your email...">
+                                    <button>SUBSCRIBE</button>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
                 </div>
             </div>
 
+        </div>
+
+        <div class="footer_mobile d-flex align-items-center">
+            <a href="#" class="footer_item d-flex flex-column gap-2 justify-content-center align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                    <path d="M8.50128 13.283V10.9648" stroke="#111111" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path
+                        d="M7.00992 1.55305L1.65492 5.84169C1.0522 6.32078 0.665832 7.33305 0.797196 8.09033L1.82492 14.2412C2.01038 15.3385 3.06129 16.2271 4.17401 16.2271H12.8286C13.9336 16.2271 14.9922 15.3308 15.1776 14.2412L16.2054 8.09033C16.329 7.33305 15.9427 6.32078 15.3477 5.84169L9.99265 1.56078C9.16583 0.896235 7.82901 0.896235 7.00992 1.55305Z"
+                        stroke="#111111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span>Home</span>
+            </a>
+            <a href="#" class="footer_item d-flex flex-column gap-2 justify-content-center align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                    <path
+                        d="M1.57253 7.89722V11.3668C1.57253 14.8363 2.96343 16.2272 6.43298 16.2272H10.598C14.0675 16.2272 15.4584 14.8363 15.4584 11.3668V7.89722"
+                        stroke="#111111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M8.51935 8.49998C9.93344 8.49998 10.9766 7.34861 10.8375 5.93452L10.3275 0.772705H6.71889L6.20116 5.93452C6.06207 7.34861 7.10525 8.49998 8.51935 8.49998Z"
+                        stroke="#111111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M13.3953 8.49998C14.9562 8.49998 16.0998 7.23271 15.9453 5.67952L15.7289 3.55452C15.4507 1.54543 14.678 0.772705 12.6534 0.772705H10.2966L10.8375 6.18952C10.9689 7.46452 12.1203 8.49998 13.3953 8.49998Z"
+                        stroke="#111111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M3.60479 8.49998C4.87979 8.49998 6.03116 7.46452 6.15479 6.18952L6.32479 4.4818L6.6957 0.772705H4.33888C2.31434 0.772705 1.54161 1.54543 1.26343 3.55452L1.05479 5.67952C0.900247 7.23271 2.04388 8.49998 3.60479 8.49998Z"
+                        stroke="#111111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M8.51934 12.3636C7.22889 12.3636 6.58752 13.005 6.58752 14.2955V16.2273H10.4512V14.2955C10.4512 13.005 9.8098 12.3636 8.51934 12.3636Z"
+                        stroke="#111111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span>Shop</span>
+            </a>
+            <a href="#" class="footer_item d-flex flex-column gap-2 justify-content-center align-items-center">
+                <i class="icon-account_icon"></i>
+                <span>Account</span>
+            </a>
+            <a href="#" class="footer_item d-flex flex-column gap-2 justify-content-center align-items-center">
+                <span class="footer_icon position-relative">
+                    <i class="icon-heart_icon"></i>
+                    <span class="number">2</span>
+                </span>
+
+                <span>Wishlist</span>
+
+            </a>
+            <a href="#" class="footer_item d-flex flex-column gap-2 justify-content-center align-items-center">
+                <span class="footer_icon position-relative">
+                    <i class="icon-cart_icon"></i>
+                    <span class="number">2</span>
+                </span>
+
+                <span>Cart</span>
+
+            </a>
         </div>
     </footer>
     <script src="./JS/index.js"></script>
