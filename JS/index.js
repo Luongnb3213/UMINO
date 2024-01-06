@@ -127,12 +127,6 @@ Array.from(next_btns).forEach((next_btn) => {
       );
       trending_list_product.style.scrollBehavior = "smooth";
       trending_list_product.scrollLeft += product.clientWidth;
-      if (trending_list_product.scrollLeft % product.clientWidth !== 0) {
-        trending_list_product.scrollLeft =
-          Math.floor(trending_list_product.scrollLeft / product.clientWidth) *
-            product.clientWidth +
-          product.clientWidth;
-      }
     }
   };
 });
@@ -148,11 +142,6 @@ Array.from(back_btns).forEach((back_btn) => {
       );
       trending_list_product.style.scrollBehavior = "smooth";
       trending_list_product.scrollLeft -= product.clientWidth;
-      if (trending_list_product.scrollLeft % product.clientWidth !== 0) {
-        trending_list_product.scrollLeft =
-          Math.floor(trending_list_product.scrollLeft / product.clientWidth) *
-          product.clientWidth;
-      }
       console.log(trending_list_product.scrollLeft);
     }
   };
@@ -177,12 +166,7 @@ Array.from(next_btns_mobile).forEach((next_btn) => {
       );
       trending_list_product.style.scrollBehavior = "smooth";
       trending_list_product.scrollLeft += product.clientWidth;
-      if (trending_list_product.scrollLeft % product.clientWidth !== 0) {
-        trending_list_product.scrollLeft =
-          Math.floor(trending_list_product.scrollLeft / product.clientWidth) *
-            product.clientWidth +
-          product.clientWidth;
-      }
+      
     }
   };
 });
@@ -198,12 +182,7 @@ Array.from(back_btns_mobile).forEach((back_btn) => {
       );
       trending_list_product.style.scrollBehavior = "smooth";
       trending_list_product.scrollLeft -= product.clientWidth;
-      if (trending_list_product.scrollLeft % product.clientWidth !== 0) {
-        trending_list_product.scrollLeft =
-          Math.floor(trending_list_product.scrollLeft / product.clientWidth) *
-          product.clientWidth;
-      }
-      console.log(trending_list_product.scrollLeft);
+    
     }
   };
 });
@@ -251,7 +230,7 @@ footer_icon.forEach((i) => {
     footer_list.style.maxHeight =
       computedStyle.maxHeight === "0px" ? footer_list.scrollHeight + "px" : "0";
     footer_list.classList.toggle("footer-list-padding");
-    this.classList.toggle("rotate");
+    this.classList.toggle("open");
   };
 });
 
