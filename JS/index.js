@@ -265,9 +265,25 @@ window.addEventListener("scroll", () => {
 
   test.style.height = `${percentage}%`;
 
-  // let header_top_list = document.querySelector(".header-top-list");
-  // let computedStyle = window.getComputedStyle(header_top_list);
-  // header.classList.toggle("sticky", this.window.scrollY > header.clientHeight);
-  // // header_top_list.clientHeight
-  // header_top_list.classList.toggle("d-none", this.window.scrollY > header.clientHeight);
+  let header = document.querySelector("header");
+  header.classList.toggle("sticky", this.window.scrollY > header.clientHeight);
+  // header_top_list.clientHeight
+  let header_top =  document.querySelector(".header_top")
+  let header_mid =  document.querySelector(".header_mid")
+  if(header_top){
+    header_top.classList.toggle("d-none", this.window.scrollY > header.clientHeight);
+  }
+  header_mid.classList.toggle("d-none", this.window.scrollY > header.clientHeight);
 });
+
+
+mobile_nav.onclick = (e)=>{
+ 
+  if(e.target.classList.contains("layer")){
+    let go_in_mobile = document.querySelectorAll(".go_in")
+    mobile_nav.classList.remove("layer");
+    go_in_mobile.forEach((a)=>{
+      a.classList.remove("go_in")
+    })
+  }
+}

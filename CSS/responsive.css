@@ -18,6 +18,14 @@
 }
 
 @media (max-width: 1024px) {
+  .trending_icon:hover::before{
+    opacity: 0;
+    visibility: hidden;
+  }
+  .trending_icon:hover .tooltip_heart{
+    opacity: 0;
+    visibility: hidden;
+  }
   .header_mid,
   .header_bot {
     display: none !important;
@@ -66,11 +74,48 @@
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
+  .body_head_img_text h1{
+    font-size: 3.6rem;
+    line-height: 1;
+  }
+  .body_head_img_text button{
+    width: 15rem;
+    padding: 10px;
+    height: unset;
+  }
   .body_head_img {
     height: 650px;
   }
 }
 @media (max-width: 767.5px) {
+  footer{
+    margin-bottom: 100px;
+  }
+  .language,.footer-payment{
+    width: 100%;
+  }
+  .last{
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+  .footer_main{
+    padding-bottom: 0px;
+  
+  }
+  .social_item:hover span{
+    top: calc(100% + 9px);
+    visibility: hidden;
+    opacity: 0;
+  }
+  .social_item:hover::after{
+    top: calc(100% + 5px);
+    visibility: hidden;
+    opacity: 0;
+  }
+  .header_top{
+    display: none;
+  }
   .feature_collection_text h2 {
     font-size: 36px;
   }

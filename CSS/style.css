@@ -92,15 +92,27 @@ html {
   font-size: 62.5%;
 }
 
-
 /* Header */
 header {
-  position: sticky;
+  position: relative;
   top: 0;
   z-index: 2;
-  box-shadow: 0 0.01rem 0.1rem rgba(0, 0, 0, 0.5);
   scroll-behavior: smooth;
   background-color: white;
+}
+.sticky {
+  position: sticky;
+  box-shadow: 0 0.01rem 0.1rem rgba(0, 0, 0, 0.5);
+  scroll-behavior: smooth;
+  animation: header_go_up 0.5s ease;
+}
+@keyframes header_go_up {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: none;
+  }
 }
 .header_top span {
   top: 50%;
@@ -123,7 +135,7 @@ header {
   font-style: normal;
   font-weight: var(--primary-font-weight);
   line-height: normal;
-  padding: 2rem 0;
+  padding: 1rem 0;
   text-align: center;
 }
 .header_top {
@@ -148,6 +160,7 @@ header {
   top: -0.2rem;
 }
 .header_mid {
+  display: flex;
   border-bottom: 0.1rem solid var(--border-color);
   padding: 1rem 0px;
 }
@@ -288,7 +301,7 @@ header {
   display: block;
   padding: 1rem 0px 1rem 3rem;
   text-decoration: none;
-  color: var(--text-color)555;
+  color: var(--text-color) 555;
   font-family: var(--primary-font-family);
   font-size: 1.6rem;
   font-style: normal;
@@ -300,7 +313,7 @@ header {
   padding-left: 0px;
 }
 .page_list_item_link:hover {
-  color: var(--text-color)555;
+  color: var(--text-color) 555;
   transform: translateX(1rem);
 }
 .blog:hover .page_item {
@@ -409,6 +422,10 @@ header {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  transition: all 0.2s linear;
+}
+.menu_item_link::hover {
+  color: #d0473e;
 }
 .menu_item_link .icon-arrow_right {
   font-size: 1rem;
@@ -419,6 +436,20 @@ header {
 .menu_item_link .icon {
   margin-right: 1rem;
 }
+.shop_layout .menu_item_link,
+.shop_page .menu_item_link,
+.home .menu_item_link,
+.pagee .menu_item_link,
+.product_layout .menu_item_link,
+.product_feature .menu_item_link,
+.product_detail .menu_item_link,
+.thumb_position .menu_item_link,
+.boot_sale .menu_item_link,
+.product_type .menu_item_link,
+.blogg .menu_item_link {
+  font-weight: 400;
+}
+
 .country {
   display: block;
   padding: 0.2rem;
@@ -794,20 +825,21 @@ header {
   visibility: visible;
 }
 .trending_icon {
+  position: relative;
   transition: all 0.2s linear;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  width: 4rem;
-  height: 4rem;
+  width: 4.5rem;
+  height: 4.5rem;
   border-radius: 10rem;
   background: var(--white-color);
   box-shadow: 0px 0.5rem 3rem 0px rgba(0, 0, 0, 0.05);
 }
 .trending_icon i::before {
   transition: all 0.2s linear;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: var(--black-color);
 }
 .trending_icon:hover {
@@ -815,6 +847,14 @@ header {
 }
 .trending_icon:hover i::before {
   color: var(--white-color);
+}
+.trending_icon:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+.trending_icon:hover .tooltip_heart {
+  opacity: 1;
+  visibility: visible;
 }
 .trending_btn {
   color: var(--black-color);
@@ -880,7 +920,7 @@ header {
 }
 .section_text p {
   color: var(--black-color);
-  font-family: var(--primary-font-family)Jost;
+  font-family: var(--primary-font-family) Jost;
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 500;
@@ -1094,7 +1134,8 @@ footer {
   transition: all 0.3s linear;
 }
 .green.active::before {
-  box-shadow: 0 0 0 0.1rem var(--black-color), inset 0 0 0 3px var(--white-color);
+  box-shadow: 0 0 0 0.1rem var(--black-color),
+    inset 0 0 0 3px var(--white-color);
 }
 .green::after {
   content: "";
@@ -1201,7 +1242,6 @@ footer {
   line-height: 8rem;
   margin-bottom: 2rem;
   animation: text_go_up 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  
 }
 .body_head_img_text p {
   color: var(--black-color);
@@ -1244,4 +1284,118 @@ footer {
     transform: translateY(0px);
     opacity: 1;
   }
+}
+.tooltip_heart {
+  position: absolute;
+  z-index: 2;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 1.3rem;
+  line-height: normal;
+  font-family: var(--primary-font-family);
+  border-radius: 5px;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  max-width: 360px;
+  content: "Add to Wislist";
+  text-align: center;
+  right: calc(100% + 9px);
+  visibility: hidden;
+  opacity: 0;
+  width: 140px;
+  transition: all 0.2s linear;
+}
+.trending_icon::before {
+  position: absolute;
+  z-index: 2;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  content: "";
+  right: calc(100% + 4px);
+  border-left-color: var(--black-color);
+  top: 50%;
+  transform: translateY(-50%);
+  border-right-width: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+.social {
+  gap: 10px;
+  margin-top: 20px;
+}
+.social_item_link:hover svg path {
+  fill: var(--black-color);
+}
+.social_item_link:hover svg circle {
+  stroke: var(--black-color);
+}
+.social_item_link svg circle {
+  transition: all 0.2s linear;
+}
+.social_item_link svg path {
+  transition: all 0.2s linear;
+}
+
+.social_item_link span {
+  position: absolute;
+  z-index: 2;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 1.3rem;
+  line-height: normal;
+  font-family: var(--primary-font-family);
+  border-radius: 5px;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  max-width: 360px;
+  content: "Add to Wislist";
+  text-align: center;
+  top: calc(100% + 5px);
+  left: 50%;
+  transform: translateX(-50%);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+.social_item {
+  position: relative;
+}
+.social_item::after {
+  position: absolute;
+  z-index: 2;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  content: "";
+  border-bottom-color: var(--black-color);
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-width: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+.social_item:hover span {
+  top: calc(100% + 9px);
+  visibility: visible;
+  opacity: 1;
+}
+.social_item:hover::after {
+  top: calc(100% + 5px);
+  visibility: visible;
+  opacity: 1;
+}
+.last {
+  padding: 30px 0;
+}
+.footer-payment .language {
+  color: #555;
+  font-family: var(--primary-font-family);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
