@@ -424,6 +424,7 @@ header {
   transform: none;
 }
 .nav_bar_head_text span {
+  cursor: pointer;
   opacity: 0.6;
   color: var(--white-color);
   font-family: var(--primary-font-family);
@@ -454,6 +455,7 @@ header {
 }
 
 .close_navbar_btn {
+  cursor: pointer;
   padding-right: 1.5rem;
 }
 .nav_bar_head {
@@ -489,6 +491,9 @@ header {
 }
 .menu_item {
   padding: 0px 3rem;
+}
+.menu_item:hover .menu_item_link{
+   color: #d0473e;
 }
 .menu_item_link .icon {
   margin-right: 1rem;
@@ -577,6 +582,7 @@ header {
 .thumb_position .nav_bar_head_text i,
 .boot_sale .nav_bar_head_text i,
 .product_type .nav_bar_head_text i {
+  cursor: pointer;
   position: relative;
   top: -0.1rem;
 }

@@ -169,6 +169,7 @@
     border-bottom: 1px solid #ebebeb;
   }
   .open-children-toogle {
+    cursor: pointer;
     width: 12px;
     height: 12px;
   }
