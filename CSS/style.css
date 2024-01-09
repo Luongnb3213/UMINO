@@ -980,8 +980,8 @@ header {
   transition: all 0.3s linear;
 }
 .section_text {
-  bottom: 2rem;
-  left: 2rem;
+  bottom: 4rem;
+  left: 4rem;
 }
 .section_text h3 {
   color: var(--black-color);
@@ -1000,6 +1000,7 @@ header {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  padding-bottom: 5px;
   margin: 0px;
 }
 .section_text p:nth-child(1) {
