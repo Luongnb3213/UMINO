@@ -150,10 +150,6 @@ Array.from(back_btns).forEach((back_btn) => {
 const next_btns_mobile = document.querySelectorAll(".mobile_button .next-btn");
 const back_btns_mobile = document.querySelectorAll(".mobile_button .back-btn");
 
-console.log(back_btns_mobile)
-
-
-
 Array.from(next_btns_mobile).forEach((next_btn) => {
   next_btn.onclick = (e) => {
     let parentElement = next_btn.parentElement.parentElement;
@@ -166,7 +162,6 @@ Array.from(next_btns_mobile).forEach((next_btn) => {
       );
       trending_list_product.style.scrollBehavior = "smooth";
       trending_list_product.scrollLeft += product.clientWidth;
-      
     }
   };
 });
@@ -182,7 +177,6 @@ Array.from(back_btns_mobile).forEach((back_btn) => {
       );
       trending_list_product.style.scrollBehavior = "smooth";
       trending_list_product.scrollLeft -= product.clientWidth;
-    
     }
   };
 });
@@ -268,22 +262,27 @@ window.addEventListener("scroll", () => {
   let header = document.querySelector("header");
   header.classList.toggle("sticky", this.window.scrollY > header.clientHeight);
   // header_top_list.clientHeight
-  let header_top =  document.querySelector(".header_top")
-  let header_mid =  document.querySelector(".header_mid")
-  if(header_top){
-    header_top.classList.toggle("d-none", this.window.scrollY > header.clientHeight);
+  let header_top = document.querySelector(".header_top");
+  let header_mid = document.querySelector(".header_mid");
+  if (header_top) {
+    header_top.classList.toggle(
+      "d-none",
+      this.window.scrollY > header.clientHeight
+    );
   }
-  header_mid.classList.toggle("d-none", this.window.scrollY > header.clientHeight);
+  header_mid.classList.toggle(
+    "d-none",
+    this.window.scrollY > header.clientHeight
+  );
 });
 
-
-mobile_nav.onclick = (e)=>{
- 
-  if(e.target.classList.contains("layer")){
-    let go_in_mobile = document.querySelectorAll(".go_in")
+mobile_nav.onclick = (e) => {
+  if (e.target.classList.contains("layer")) {
+    let go_in_mobile = document.querySelectorAll(".go_in");
     mobile_nav.classList.remove("layer");
-    go_in_mobile.forEach((a)=>{
-      a.classList.remove("go_in")
-    })
+    go_in_mobile.forEach((a) => {
+      a.classList.remove("go_in");
+    });
   }
-}
+};
+
